@@ -166,9 +166,9 @@ highest_energy - lowest_energy as energy_diff
 FROM cte;
 
 
--- Query Optimization
+-- Query Optimization --
 
-EXPLAIN ANALYZE --et 7.97 ms pt 0.112ms
+EXPLAIN ANALYZE -- (execution time 5.747 ms) (planning time 0.162ms)
 
 SELECT artist,track, views
 FROM spotify
@@ -180,7 +180,14 @@ ORDER BY stream DESC LIMIT 25
 
 CREATE INDEX artist_index ON spotify (artist);
 
+EXPLAIN ANALYZE -- (execution time 0.153 ms) (planning time 0.152ms)
 
+SELECT artist,track, views
+FROM spotify
+WHERE artist = 'Gorillaz'
+      AND 
+	  most_played_on= 'Youtube'
+ORDER BY stream DESC LIMIT 25
 
 
 
