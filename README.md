@@ -1,6 +1,5 @@
-# Spotify Advanced SQL Project and Query Optimization P-6
-Project Category: Advanced
-[Click Here to get Dataset](https://www.kaggle.com/datasets/sanjanchaudhari/spotify-dataset)
+# Spotify Data Analysis using SQL and Query Optimization
+
 
 ![Spotify Logo](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_logo.jpg)
 
@@ -64,9 +63,9 @@ In advanced stages, the focus shifts to improving query performance. Some optimi
 - **Indexing**: Adding indexes on frequently queried columns.
 - **Query Execution Plan**: Using `EXPLAIN ANALYZE` to review and refine query performance.
   
----
 
-## 15 Practice Questions
+
+## 13 Business Queries
 
 ### Easy Level
 1. Retrieve the names of all tracks that have more than 1 billion streams.
@@ -102,14 +101,6 @@ SELECT
 FROM cte
 ORDER BY 2 DESC
 ```
-   
-5. Find tracks where the energy-to-liveness ratio is greater than 1.2.
-6. Calculate the cumulative sum of likes for tracks ordered by the number of views, using window functions.
-
-
-Here’s an updated section for your **Spotify Advanced SQL Project and Query Optimization** README, focusing on the query optimization task you performed. You can include the specific screenshots and graphs as described.
-
----
 
 ## Query Optimization Technique 
 
@@ -145,7 +136,11 @@ To improve query performance, we carried out the following optimization process:
       ![Performance Graph](https://github.com/najirh/najirh-Spotify-Data-Analysis-using-SQL/blob/main/spotify_graphical%20view%201.png)
 
 This optimization shows how indexing can drastically reduce query time, improving the overall performance of our database operations in the Spotify project.
----
+
+
+## Dataset
+
+[Click Here to get Dataset](https://www.kaggle.com/datasets/sanjanchaudhari/spotify-dataset)
 
 ## Technology Stack
 - **Database**: PostgreSQL
@@ -159,19 +154,9 @@ This optimization shows how indexing can drastically reduce query time, improvin
 4. Execute SQL queries to solve the listed problems.
 5. Explore query optimization techniques for large datasets.
 
----
-
 ## Next Steps
 - **Visualize the Data**: Use a data visualization tool like **Tableau** or **Power BI** to create dashboards based on the query results.
 - **Expand Dataset**: Add more rows to the dataset for broader analysis and scalability testing.
 - **Advanced Querying**: Dive deeper into query optimization and explore the performance of SQL queries on larger datasets.
 
----
 
-## Contributing
-If you would like to contribute to this project, feel free to fork the repository, submit pull requests, or raise issues.
-
----
-
-## License
-This project is licensed under the MIT License.
